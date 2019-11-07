@@ -23,9 +23,9 @@ CC := gcc
 
 all: sing_list.exec
 
-sing_list.exec: sing_list.o
+sing_list.exec: test_NIK.o
 	echo "Creating----------------------------" $@
 	@$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm -frv *.o *.exec
+	rm -frv *.o *.exec a.out
